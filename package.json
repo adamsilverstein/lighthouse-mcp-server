@@ -1,0 +1,28 @@
+{
+  "name": "lighthouse-server",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js"
+  },
+  "keywords": ["lighthouse", "pagespeed", "performance", "mcp", "server"],
+  "author": "",
+  "license": "ISC",
+  "description": "MCP server for Lighthouse reports from PageSpeed Insights API",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  },
+  "bin": {
+    "lighthouse": "./build/index.js"
+  },
+
+  "files": [
+    "build"
+  ]
+}
