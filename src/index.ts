@@ -68,7 +68,7 @@ async function makePageSpeedRequest(
   strategy: string = "mobile",
   category: string = "performance",
   apiKey: string = PAGESPEED_API_KEY,
-  timeoutMs: number = 60000 // 60 seconds timeout
+  timeoutMs: number = 150000
 ): Promise<PageSpeedResponse | null> {
   const apiUrl = `${PAGESPEED_API_BASE}?url=${encodeURIComponent(url)}&strategy=${strategy}&category=${category}&key=${apiKey}`;
 
